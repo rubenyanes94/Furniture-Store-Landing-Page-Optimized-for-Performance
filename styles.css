@@ -1,4 +1,3 @@
-/* Importa una fuente elegante */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 body {
@@ -156,7 +155,7 @@ body {
     border-radius: 5px;
 }
 
-/* Estilo base para los círculos de color */
+
 .color-swatch {
     display: inline-block;
     width: 28px;
@@ -168,14 +167,13 @@ body {
     opacity: 0.8;
 }
 
-/* Estilo para el color seleccionado */
 .color-swatch.active {
-    border-color: #000; /* Borde más oscuro para el color activo */
-    transform: scale(1.1); /* Ligeramente más grande */
+    border-color: #000; 
+    transform: scale(1.1); 
     opacity: 1;
 }
 
-/* Contenedor del selector, para dar un poco de margen */
+
 .color-options-container {
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
@@ -191,47 +189,67 @@ body {
     }
 }
 
-/* --- Sección de Contacto --- */
-
-/* Estilos para el contenedor del mapa */
 .map-container iframe {
-    border-radius: 8px; /* Bordes redondeados para el mapa */
+    border-radius: 8px; 
 }
 
-/* Estilos para los botones de redes sociales en la sección de Contacto */
+
 .social-icons-contact .social-btn {
-    display: inline-flex; /* Para centrar el icono verticalmente */
+    display: inline-flex; 
     align-items: center;
     justify-content: center;
-    width: 45px; /* Ancho del botón */
-    height: 45px; /* Altura del botón */
-    border-radius: 50%; /* Forma circular */
-    font-size: 20px; /* Tamaño del icono */
-    color: #fff; /* Color del icono */
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+    font-size: 20px; 
+    color: #fff; 
     text-decoration: none;
-    transition: all 0.3s ease; /* Transición suave para el hover */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: all 0.3s ease; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .social-icons-contact .social-btn.facebook {
-    background-color: #3b5998; /* Color de Facebook */
+    background-color: #3b5998;
 }
 
 .social-icons-contact .social-btn.instagram {
-    background-color: #E1306C; /* Color de Instagram */
+    background-color: #E1306C; 
 }
 
 .social-icons-contact .social-btn.tiktok {
-    background-color: #000000; /* Color de TikTok */
+    background-color: #000000; 
 }
 
 /* Efecto hover */
 .social-icons-contact .social-btn.facebook:hover {
-    background-color: #2d4373; /* Oscurecer Facebook al pasar el ratón */
-    transform: translateY(-2px); /* Pequeño levantamiento */
+    background-color: #2d4373; 
+    transform: translateY(-2px); 
 }
 
 .social-icons-contact .social-btn.instagram:hover {
-    background-color: #c13584; /* Oscurecer Instagram al pasar el ratón */
+    background-color: #c13584; 
     transform: translateY(-2px);
+}
+
+.category-img-wrapper {
+    overflow: hidden;
+    height: 350px;    
+    position: relative;
+}
+
+.category-img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.category-link:hover .category-img-wrapper img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .category-img-wrapper {
+        height: 200px;
+    }
 }
