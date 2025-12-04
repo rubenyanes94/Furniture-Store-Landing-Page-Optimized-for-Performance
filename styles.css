@@ -168,8 +168,8 @@ body {
 }
 
 .color-swatch.active {
-    border-color: #000; 
-    transform: scale(1.1); 
+    border-color: #000;
+    transform: scale(1.1);
     opacity: 1;
 }
 
@@ -183,6 +183,7 @@ body {
     --bs-text-opacity: 1;
     color: #25D366 !important;
 }
+
 @media (max-width: 991.98px) {
     body {
         padding-top: 56px;
@@ -190,21 +191,21 @@ body {
 }
 
 .map-container iframe {
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
 
 .social-icons-contact .social-btn {
-    display: inline-flex; 
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 45px; 
-    height: 45px; 
-    border-radius: 50%; 
-    font-size: 20px; 
-    color: #fff; 
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
     text-decoration: none;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -213,34 +214,34 @@ body {
 }
 
 .social-icons-contact .social-btn.instagram {
-    background-color: #E1306C; 
+    background-color: #E1306C;
 }
 
 .social-icons-contact .social-btn.tiktok {
-    background-color: #000000; 
+    background-color: #000000;
 }
 
 /* Efecto hover */
 .social-icons-contact .social-btn.facebook:hover {
-    background-color: #2d4373; 
-    transform: translateY(-2px); 
+    background-color: #2d4373;
+    transform: translateY(-2px);
 }
 
 .social-icons-contact .social-btn.instagram:hover {
-    background-color: #c13584; 
+    background-color: #c13584;
     transform: translateY(-2px);
 }
 
 .category-img-wrapper {
     overflow: hidden;
-    height: 350px;    
+    height: 350px;
     position: relative;
 }
 
 .category-img-wrapper img {
     height: 100%;
     width: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
@@ -251,5 +252,112 @@ body {
 @media (max-width: 768px) {
     .category-img-wrapper {
         height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* 1. Ajuste del Logo Gigante
+       El tamaño original de 6rem es demasiado grande para móvil. */
+    .furni-pro-logo {
+        font-size: 2.2rem;
+        /* Reducido de 6rem */
+        letter-spacing: 0.1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* 2. Sección Hero (Portada)
+       Evitamos que ocupe el 100% de la altura si el contenido es mucho,
+       y ajustamos los márgenes laterales. */
+    .hero-section {
+        min-height: auto;
+        padding: 4rem 1rem;
+        /* Más espacio arriba/abajo, menos a los lados */
+        text-align: center;
+    }
+
+    .hero-section p.lead {
+        font-size: 1.1rem;
+        /* Texto de introducción más leíble */
+    }
+
+    /* 3. Iconos de valor (Calidad, Diseño, etc)
+       Reducimos el tamaño para que quepan bien en línea o columnas pequeñas. */
+    .value-prop-icon {
+        font-size: 1.5rem;
+    }
+
+    .col-4 .small {
+        font-size: 0.75rem;
+        /* Texto pequeño debajo de los iconos */
+    }
+
+    /* 4. Carrusel y Vista de Ambiente
+       El carrusel de 550px es muy alto para móvil. Lo reducimos. */
+    .carousel-background-img {
+        height: 350px;
+        /* Reducido de 550px */
+    }
+
+    /* 5. Imagen Flotante (El sofá encima del carrusel)
+       Tu CSS original tiene un width fijo de 400px, lo cual rompe
+       pantallas de 360px (Android promedio/iPhone). */
+    .furniture-image {
+        width: auto;
+        /* Quitamos el ancho fijo */
+        max-width: 85vw;
+        /* Ocupa máximo el 85% del ancho de la pantalla */
+        height: auto;
+    }
+
+    /* Ajustamos la posición para que no tape el texto del carrusel */
+    .static-furniture-overlay {
+        top: 60%;
+        /* Bajamos un poco la imagen para que se vea el fondo */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 6. Tarjetas de Productos
+       Hacemos las imágenes un poco más bajas para ver más productos al hacer scroll. */
+    .card-img-top {
+        height: 200px;
+        /* Reducido de 280px */
+    }
+
+    /* 7. Categorías
+       Ajustamos la altura de las imágenes de categoría para que no se vean estiradas. */
+    .category-img-wrapper {
+        height: 160px;
+        /* Altura cuadrada para cuadrícula móvil */
+    }
+
+    .category-link h5 {
+        font-size: 0.9rem;
+        /* Títulos de categoría más compactos */
+    }
+
+    /* 8. Ajustes Generales de Espaciado */
+    h2 {
+        font-size: 1.8rem;
+        /* Títulos de sección más pequeños */
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+        /* Iconos grandes de la sección 'Nosotros' */
+    }
+}
+
+/* Ajuste extra para pantallas MUY pequeñas (iPhone SE, Galaxy Fold plegado) */
+@media (max-width: 380px) {
+    .furni-pro-logo {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        width: 100%;
+        /* Botones ocupan todo el ancho para facilitar el toque */
+        margin-bottom: 0.5rem;
     }
 }
