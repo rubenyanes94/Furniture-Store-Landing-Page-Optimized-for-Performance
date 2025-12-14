@@ -1,34 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Este código debe estar en script.js
     function sendWhatsAppMessage() {
-        const phoneNumber = '584120000000';
+        const phoneNumber = "584140000000"; 
 
         const nombre = document.getElementById('contact-nombre').value;
         const email = document.getElementById('contact-email').value;
-        const tipoProyectoElement = document.getElementById('contact-tipo-proyecto');
-        const tipoProyecto = tipoProyectoElement.options[tipoProyectoElement.selectedIndex].text;
+        const tipoProyecto = document.getElementById('contact-tipo-proyecto').value;
         const asunto = document.getElementById('contact-asunto').value;
         const mensaje = document.getElementById('contact-mensaje').value;
 
-        if (!nombre || !email || tipoProyecto === 'Seleccione el Tipo de Proyecto' || !asunto || !mensaje) {
-            alert("Por favor, complete todos los campos para solicitar la consulta.");
+        if (nombre === "" || email === "") {
+            alert("Por favor, completa al menos tu nombre y correo para continuar.");
             return;
         }
 
-        const waMessage = `¡Nueva Solicitud de Consulta de Muebles desde la Web!\n\n` +
-            `===========================\n` +
-            `*Tipo de Solicitud:* ${tipoProyecto}\n` +
-            `*Asunto:* ${asunto}\n` +
-            `*Nombre:* ${nombre}\n` +
-            `*Correo:* ${email}\n\n` +
-            `*Mensaje:* ${mensaje}`;
+        const whatsappMessage = `*Nueva Solicitud de Asesoría* 🛋️%0A` +
+                                `%0A*Nombre:* ${nombre}` +
+                                `%0A*Email:* ${email}` +
+                                `%0A*Tipo de Proyecto:* ${tipoProyecto}` +
+                                `%0A*Asunto:* ${asunto}` +
+                                `%0A*Mensaje:* ${mensaje}`;
 
-        const encodedMessage = encodeURIComponent(waMessage);
-        const waURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+        
+        window.open(url, '_blank').focus();
+    };
 
-        window.open(waURL, '_blank');
-    }
     const mainNav = document.getElementById('main-nav');
     if (mainNav) {
         window.addEventListener('scroll', function () {
