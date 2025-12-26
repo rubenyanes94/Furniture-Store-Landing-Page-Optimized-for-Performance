@@ -93,6 +93,80 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    const productosDB = [
+        { id: 1, categoria: 'sofas', nombre: 'Sofa-becca', precio: '$850', img: 'img/sofa-becca.png'},
+        { id: 2, categoria: 'sofas', nombre: 'Sofa argus+ blue', precio: '$500', img: 'img/sofa-argus-+-blue.png' },
+        { id: 3, categoria: 'sillas', nombre: 'Poltrona Gala', precio: '$120', img: 'img/poltrona-gala.png' },
+        { id: 4, categoria: 'camas', nombre: 'Cama King', precio: '$250', img: 'img/cama-king.png' },
+        { id: 5, categoria: 'camas', nombre: 'Cama Nidus', precio: '$1200', img: 'img/cama-nidus.png' },
+        { id: 6, categoria: 'camas', nombre: 'Cama bubbles', precio: '$150', img: 'img/cama-bubbles.png' },
+        { id: 7, categoria: 'sofas', nombre: 'Juego tyrone', precio: '$150', img: 'img/juego-tyrone-blue.png' },
+        { id: 8, categoria: 'sofas', nombre: 'Juego tyrone', precio: '$150', img: 'img/juego-tyrone-grey.png' },
+        { id: 9, categoria: 'sofas', nombre: 'Sofá cama LIAM - blue', precio: '$150', img: 'img/sofá cama LIAM - blue.png' },
+        { id: 10, categoria: 'sofas', nombre: 'Sofá cama LIAM - grey', precio: '$150', img: 'img/sofá cama LIAM - grey.png'},
+        { id: 11, categoria: 'sofas', nombre: 'Sofa ares', precio: '$150', img: 'img/sofa-ares-green.png' },
+        { id: 12, categoria: 'sofas', nombre: 'Sofa ares', precio: '$150', img: 'img/sofa-ares-grey.png' },
+        { id: 13, categoria: 'sillas', nombre:'Poltrona Noah', precio: '$150', img: 'img/poltrona-noah.png' },
+        { id: 14, categoria: 'sofas', nombre: 'Sofa ares', precio: '$150', img: 'img/sofa-ares-blue.png' },
+        { id: 15, categoria: 'sofas', nombre: 'Sofa argus+', precio: '$150', img: 'img/sofa-argus-+-grey.png' },
+        { id: 16, categoria: 'sofas', nombre: 'Sofa Dioxele', precio: '$150', img: 'img/sofa-dioxele-blue.png' },
+        { id: 17, categoria: 'sofas', nombre: 'Sofa Dioxele', precio: '$150', img: 'img/sofa-dioxele-grey.png' },
+        { id: 18, categoria: 'sofas', nombre: 'Sofa Dioxele', precio: '$150', img: 'img/sofa-dioxele-black.png' },
+        { id: 19, categoria: 'sofas', nombre: 'Sofa Hadi', precio: '$150', img: 'img/sofa-hadi-green.png' },
+        { id: 20, categoria: 'sofas', nombre: 'Sofa Hadi', precio: '$150', img: 'img/sofa-hadi-blue.png' },
+        { id: 21, categoria: 'sofas', nombre: 'Sofa Hadi', precio: '$150', img: 'img/sofa-hadi-grey.png' },
+        
+    ];
+
+    const seccionDisplay = document.getElementById('display-productos');
+    const contenedor = document.getElementById('contenedor-productos');
+    const tituloSeccion = document.getElementById('titulo-seccion');
+
+    function mostrarProductos(categoria) {
+        // 1. Mostrar la sección quitando 'd-none'
+        seccionDisplay.classList.remove('d-none');
+        
+        // 2. Limpiar contenido previo
+        contenedor.innerHTML = '';
+        
+        // 3. Filtrar
+        const filtrados = productosDB.filter(p => p.categoria === categoria);
+        tituloSeccion.textContent = 'Explorando: ' + categoria.toUpperCase();
+
+        // 4. Inyectar HTML
+        filtrados.forEach(p => {
+            const card = `
+                <div class="col animate__animated animate__fadeIn">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="${p.img}" class="card-img-top" style="height:200px; object-fit:cover;">
+                        <div class="card-body text-center">
+                            <h6 class="fw-bold">${p.nombre}</h6>
+                            <p class="text-primary mb-0">${p.precio}</p>
+                        </div>
+                    </div>
+                </div>`;
+            contenedor.innerHTML += card;
+        });
+
+        // 5. Scroll suave automático a los resultados
+        seccionDisplay.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Evento para los botones
+    document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const cat = btn.getAttribute('data-category');
+            mostrarProductos(cat);
+        });
+    });
+
+    // Función para volver a ocultar
+    function cerrarVista() {
+        seccionDisplay.classList.add('d-none');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 });
 
 

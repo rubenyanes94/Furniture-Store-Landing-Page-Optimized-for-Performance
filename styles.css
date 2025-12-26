@@ -309,19 +309,50 @@ body {
 
     .category-link h5 {
         font-size: 0.9rem;
-      
+
     }
 
-   
+
     h2 {
         font-size: 1.8rem;
-        
+
     }
 
     .display-4 {
         font-size: 2.5rem;
     }
 }
+
+.btn-whatsapp {
+    background-color: #25d366;
+    color: white;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    color: white;
+}
+
+.color-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+}
+
+.card-product {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+}
+
 
 
 @media (max-width: 380px) {
