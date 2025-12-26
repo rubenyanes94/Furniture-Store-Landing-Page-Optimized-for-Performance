@@ -149,11 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
             contenedor.innerHTML += card;
         });
 
-        // 5. Scroll suave automático a los resultados
         seccionDisplay.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Evento para los botones
     document.querySelectorAll('.category-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -162,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Función para volver a ocultar
     function cerrarVista() {
         seccionDisplay.classList.add('d-none');
         window.scrollTo({ top: 0, behavior: 'smooth' });
