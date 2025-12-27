@@ -353,6 +353,27 @@ body {
     transform: translateY(-5px);
 }
 
+#hero-video .text-primary {
+    color: #25d366 !important; 
+    text-shadow: 0px 0px 15px rgba(255, 215, 0, 0.4);
+}
+
+#hero-video h6 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#hero-video p.small {
+    line-height: 1.2;
+}
+
+.btn-hero {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: white;
+    transition: background 0.3s, border-color 0.3s;
+}
+
 
 
 @media (max-width: 380px) {
