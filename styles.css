@@ -442,6 +442,29 @@ body {
     color: #28a745; 
 }
 
+#carousel-principales {
+    padding-bottom: 30px; 
+    padding-top: 10px;
+}
+
+#carousel-principales .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px; 
+}
+
+#carousel-principales .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#carousel-principales .card-img-top {
+    height: 280px;
+    object-fit: cover;
+}
+
 @keyframes fadeInRight {
     from { opacity: 0; transform: translateX(20px); }
     to { opacity: 1; transform: translateX(0); }
