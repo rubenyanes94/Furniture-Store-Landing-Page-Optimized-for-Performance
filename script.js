@@ -97,27 +97,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const numeroWhatsApp = "521234567890";
 
     const productosDB = [
-        { id: 1, categoria: 'sofas', nombre: 'Sofa-becca', precio: '$850', img: 'img/sofa-becca.png' },
-        { id: 2, categoria: 'sofas', nombre: 'Sofa argus+ blue', precio: '$500', img: 'img/sofa-argus-+-blue.png' },
-        { id: 3, categoria: 'sillas', nombre: 'Poltrona Gala', precio: '$120', img: 'img/poltrona-gala.png' },
-        { id: 4, categoria: 'camas', nombre: 'Cama King', precio: '$250', img: 'img/cama-king.png' },
-        { id: 5, categoria: 'camas', nombre: 'Cama Nidus', precio: '$1200', img: 'img/cama-nidus.png' },
-        { id: 6, categoria: 'camas', nombre: 'Cama bubbles', precio: '$150', img: 'img/cama-bubbles.png' },
-        { id: 7, categoria: 'sofas', nombre: 'Juego tyrone', precio: '$150', img: 'img/juego-tyrone-blue.png' },
-        { id: 8, categoria: 'sofas', nombre: 'Juego tyrone', precio: '$150', img: 'img/juego-tyrone-grey.png' },
-        { id: 9, categoria: 'sofas', nombre: 'Sofá cama LIAM - blue', precio: '$150', img: 'img/sofá cama LIAM - blue.png' },
-        { id: 10, categoria: 'sofas', nombre: 'Sofá cama LIAM - grey', precio: '$150', img: 'img/sofá cama LIAM - grey.png' },
-        { id: 11, categoria: 'sofas', nombre: 'Sofa ares', precio: '$150', img: 'img/sofa-ares-green.png' },
-        { id: 12, categoria: 'sofas', nombre: 'Sofa ares', precio: '$150', img: 'img/sofa-ares-grey.png' },
-        { id: 13, categoria: 'sillas', nombre: 'Poltrona Noah', precio: '$150', img: 'img/poltrona-noah.png' },
-        { id: 14, categoria: 'sofas', nombre: 'Sofa ares', precio: '$150', img: 'img/sofa-ares-blue.png' },
-        { id: 15, categoria: 'sofas', nombre: 'Sofa argus+', precio: '$150', img: 'img/sofa-argus-+-grey.png' },
-        { id: 16, categoria: 'sofas', nombre: 'Sofa Dioxele', precio: '$150', img: 'img/sofa-dioxele-blue.png' },
-        { id: 17, categoria: 'sofas', nombre: 'Sofa Dioxele', precio: '$150', img: 'img/sofa-dioxele-grey.png' },
-        { id: 18, categoria: 'sofas', nombre: 'Sofa Dioxele', precio: '$150', img: 'img/sofa-dioxele-black.png' },
-        { id: 19, categoria: 'sofas', nombre: 'Sofa Hadi', precio: '$150', img: 'img/sofa-hadi-green.png' },
-        { id: 20, categoria: 'sofas', nombre: 'Sofa Hadi', precio: '$150', img: 'img/sofa-hadi-blue.png' },
-        { id: 21, categoria: 'sofas', nombre: 'Sofa Hadi', precio: '$150', img: 'img/sofa-hadi-grey.png' },
+        { id: 1, categoria: 'sofas', nombre: 'Sofá Lua', precio: '$520', img: 'img/sofa-becca.png' },
+        { id: 2, categoria: 'sofas', nombre: 'Sofá Nexus Elite', precio: '$1600', img: 'img/sofa-argus-+-blue.png' },
+        { id: 3, categoria: 'sillas', nombre: 'Poltrona Velvet', precio: '$220', img: 'img/poltrona-gala.png' },
+        { id: 4, categoria: 'camas', nombre: 'Cama Dintel - Queen', precio: '$440', img: 'img/cama-king.png' },
+        { id: 5, categoria: 'camas', nombre: 'Cama Saint - Individual', precio: '$290', img: 'img/cama-nidus.png' },
+        { id: 6, categoria: 'camas', nombre: 'Cama Puro - Matrimonial', precio: '$380', img: 'img/cama-bubbles.png' },
+        { id: 7, categoria: 'sofas', nombre: 'Juego Consul', precio: '$630', img: 'img/juego-tyrone-blue.png' },
+        { id: 8, categoria: 'sofas', nombre: 'Sofá cama Mor', precio: '$800', img: 'img/sofá cama LIAM - grey.png' },
+        { id: 9, categoria: 'sofas', nombre: 'Sofá Pro', precio: '$520', img: 'img/sofa-ares-green.png' },
+        { id: 10, categoria: 'sillas', nombre: 'Poltrona Bubble', precio: '$300', img: 'img/poltrona-noah.png' },
+        { id: 11, categoria: 'sofas', nombre: 'Juego Vitra', precio: '$1.440', img: 'img/sofa-dioxele-blue.png' },
+        { id: 12, categoria: 'sofas', nombre: 'Sofá Aura', precio: '$520', img: 'img/sofa-hadi-green.png' },
+        { id: 14, categoria: 'sofas', nombre: 'Sofá Modular Kori', precio: '$440', img: 'modular-basil-original.png' },
+        { id: 15, categoria: 'sofas', nombre: 'Sofá Modular Comfy', precio: '$360', img: 'modular-estambul-grey.png' },
+        
     ];
 
     const seccionDisplay = document.getElementById('display-productos');
