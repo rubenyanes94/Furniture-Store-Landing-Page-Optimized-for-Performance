@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const productosDB = [
         { id: 1, categoria: 'sofas', nombre: 'Sofá Lua', precio: '$520', img: 'img/sofa-becca.png' },
-        { id: 2, categoria: 'sofas', nombre: 'Sofá Nexus Elite', precio: '$1600', img: 'img/sofa-argus-+-blue.png' },
+        { id: 2, categoria: 'sofas', nombre: 'Sofá Nexus Elite', precio: '$1.600', img: 'img/sofa-argus-+-blue.png' },
         { id: 3, categoria: 'sillas', nombre: 'Poltrona Velvet', precio: '$220', img: 'img/poltrona-gala.png' },
         { id: 4, categoria: 'camas', nombre: 'Cama Dintel - Queen', precio: '$440', img: 'img/cama-king.png' },
         { id: 5, categoria: 'camas', nombre: 'Cama Saint - Individual', precio: '$290', img: 'img/cama-nidus.png' },
@@ -107,11 +107,26 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 8, categoria: 'sofas', nombre: 'Sofá cama Mor', precio: '$800', img: 'img/sofá cama LIAM - grey.png' },
         { id: 9, categoria: 'sofas', nombre: 'Sofá Pro', precio: '$520', img: 'img/sofa-ares-green.png' },
         { id: 10, categoria: 'sillas', nombre: 'Poltrona Bubble', precio: '$300', img: 'img/poltrona-noah.png' },
-        { id: 11, categoria: 'sofas', nombre: 'Juego Vitra', precio: '$1.440', img: 'img/sofa-dioxele-blue.png' },
+        { id: 11, categoria: 'sofas', nombre: 'Vitra - Dos puestos', precio: '$650', img: 'img/sofa-dioxele-blue.png' },
         { id: 12, categoria: 'sofas', nombre: 'Sofá Aura', precio: '$520', img: 'img/sofa-hadi-green.png' },
-        { id: 14, categoria: 'sofas', nombre: 'Sofá Modular Kori', precio: '$440', img: 'modular-basil-original.png' },
-        { id: 15, categoria: 'sofas', nombre: 'Sofá Modular Comfy', precio: '$360', img: 'modular-estambul-grey.png' },
-        
+        { id: 14, categoria: 'sofas', nombre: 'Sofá Modular Comfy', precio: '$440', img: 'modular-estambul-grey.png' },
+        { id: 15, categoria: 'mesas', nombre: 'Corteza', precio: '$120', img: 'mesa-corteza.png' },
+        { id: 16, categoria: 'mesas', nombre: 'Veta', precio: '$120', img: 'mesa-veta.png' },
+        { id: 17, categoria: 'mesas', nombre: 'Astilla', precio: '$120', img: 'mesa-astilla.png' },
+        { id: 18, categoria: 'mesas', nombre: 'Lignum', precio: '$120', img: 'mesa-lignum.png' },
+        { id: 19, categoria: 'mesas', nombre: 'Bosque', precio: '$120', img: 'mesa-bosque.png' },
+        { id: 20, categoria: 'mesas', nombre: 'Nudo', precio: '$120', img: 'mesa-nudo.png' },
+        { id: 21, categoria: 'mesas', nombre: 'Artesano', precio: '$120', img: 'mesa-artesano.png' },
+        { id: 22, categoria: 'mesas', nombre: 'Roble', precio: '$120', img: 'mesa-roble.png' },
+        { id: 23, categoria: 'mesas', nombre: 'Sandalo', precio: '$160', img: 'mesa-sandalo.png' },
+        { id: 24, categoria: 'mesas', nombre: 'Raiz', precio: '$120', img: 'mesa-raiz.png' },
+        { id: 25, categoria: 'sofas', nombre: 'Juego Vitra', precio: '$1.440', img: 'juego-dioxele.png' },
+        { id: 26, categoria: 'sofas', nombre: 'Vitra - 3 Puestos', precio: '$790', img: 'dioxele-tres.png' },
+        { id: 27, categoria: 'sofas', nombre: 'Juego Broca', precio: '$1.550', img: 'juego-broca.png' },
+        { id: 28, categoria: 'sofas', nombre: 'Broca - 3 Puestos', precio: '$775', img: 'broca-3.png' },
+        { id: 29, categoria: 'sofas', nombre: 'Broca - 2 Puestos', precio: '$770', img: 'broca-dos-puestos.png' },
+        { id: 30, categoria: 'camas', nombre: 'Cama King - Night', precio: '$770', img: 'cama-night.png' },
+        { id: 31, categoria: 'sillas', nombre: 'Poltrona Cloud', precio: '$220', img: 'cama-night.png' },
     ];
 
     const seccionDisplay = document.getElementById('display-productos');
