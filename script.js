@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 28, categoria: 'sofas', nombre: 'Broca - 3 Puestos', precio: '$775', img: 'broca-3.png' },
         { id: 29, categoria: 'sofas', nombre: 'Broca - 2 Puestos', precio: '$770', img: 'broca-dos-puestos.png' },
         { id: 30, categoria: 'camas', nombre: 'Cama King - Night', precio: '$770', img: 'cama-night.png' },
-        { id: 31, categoria: 'sillas', nombre: 'Poltrona Cloud', precio: '$220', img: 'cama-night.png' },
+        { id: 31, categoria: 'sillas', nombre: 'Poltrona Cloud', precio: '$220', img: 'poltrona-carlos.png' },
     ];
 
     const seccionDisplay = document.getElementById('display-productos');
