@@ -127,6 +127,10 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 29, categoria: 'sofas', nombre: 'Broca - 2 Puestos', precio: '$770', img: 'broca-dos-puestos.png' },
         { id: 30, categoria: 'camas', nombre: 'Cama King - Night', precio: '$770', img: 'cama-night.png' },
         { id: 31, categoria: 'sillas', nombre: 'Poltrona Cloud', precio: '$220', img: 'poltrona-carlos.png' },
+        { id: 32, categoria: 'novedades', nombre: 'Poltrona Cloud', precio: '$220', img: 'poltrona-carlos.png' },
+        { id: 33, categoria: 'novedades', nombre: 'Sandalo', precio: '$160', img: 'mesa-sandalo.png' },
+        { id: 34, categoria: 'novedades', nombre: 'Cama Dintel - Queen', precio: '$440', img: 'img/cama-king.png' },
+        { id: 35, categoria: 'novedades', nombre: 'Sofá Nexus Elite', precio: '$1.600', img: 'img/sofa-argus-+-blue.png' },
     ];
 
     const seccionDisplay = document.getElementById('display-productos');
