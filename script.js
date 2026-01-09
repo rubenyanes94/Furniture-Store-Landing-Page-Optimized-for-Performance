@@ -131,6 +131,13 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 33, categoria: 'novedades', nombre: 'Sandalo', precio: '$160', img: 'mesa-sandalo.png' },
         { id: 34, categoria: 'novedades', nombre: 'Cama Dintel - Queen', precio: '$440', img: 'img/cama-king.png' },
         { id: 35, categoria: 'novedades', nombre: 'Sofá Nexus Elite', precio: '$1.600', img: 'img/sofa-argus-+-blue.png' },
+        { id: 36, categoria: 'sofas', nombre: 'Juego Legado', precio: '$980', img: 'juego-clasico.png' },
+        { id: 37, categoria: 'sillas', nombre: 'Poltrona Sira', precio: '$200', img: 'poltrona-valery.png'},
+        { id: 38, categoria: 'sillas', nombre: 'Poltrona Eva', precio: '$200', img: 'poltrona-eva.png'},
+        { id: 39, categoria: 'sillas', nombre: 'Sillon Mura - Precio por unidad', precio: '$200', img: 'mura.png'},
+        { id: 40, categoria: 'sillas', nombre: 'Poltrona Duna', precio: '$200', img: 'duna.png'},
+        { id: 41, categoria: 'sofas', nombre: 'Nuvola Especial', precio: '$370', img: 'modular-especial.png'},
+        { id: 42, categoria: 'sofas', nombre: 'Modular Nexus', precio: '$1.580', img: 'sofa-argus-blue.png'},
     ];
 
     const seccionDisplay = document.getElementById('display-productos');
