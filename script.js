@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 27, categoria: 'sofas', nombre: 'Juego Broca', precio: '$1.550', img: 'juego-broca.png' },
         { id: 28, categoria: 'sofas', nombre: 'Broca - 3 Puestos', precio: '$775', img: 'broca-3.png' },
         { id: 29, categoria: 'sofas', nombre: 'Broca - 2 Puestos', precio: '$770', img: 'broca-dos-puestos.png' },
-        { id: 30, categoria: 'camas', nombre: 'Cama King - Night', precio: '$770', img: 'cama-night.png' },
+        { id: 30, categoria: 'camas', nombre: 'Cama Night - King', precio: '$800', img: 'cama-night.png' },
         { id: 31, categoria: 'sillas', nombre: 'Poltrona Cloud', precio: '$220', img: 'poltrona-carlos.png' },
         { id: 32, categoria: 'novedades', nombre: 'Poltrona Cloud', precio: '$220', img: 'poltrona-carlos.png' },
         { id: 33, categoria: 'novedades', nombre: 'Sandalo', precio: '$160', img: 'mesa-sandalo.png' },
