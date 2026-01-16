@@ -97,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Base de Datos de Productos
 const productosDB = [
-    // --- SOFÁS ---
     { 
         id: 1, 
         categoria: 'sofas', 
@@ -261,7 +260,6 @@ const productosDB = [
         material: 'Tela' 
     },
 
-    // --- SILLAS Y POLTRONAS ---
     { 
         id: 3, 
         categoria: 'sillas', 
@@ -317,7 +315,6 @@ const productosDB = [
         material: 'Tela' 
     },
 
-    // --- CAMAS ---
     { 
         id: 4, 
         categoria: 'camas', 
@@ -355,7 +352,6 @@ const productosDB = [
         material: 'Tela/Madera' 
     },
 
-    // --- MESAS (Madera) ---
     { 
         id: 15, 
         categoria: 'mesas', 
@@ -447,7 +443,6 @@ const productosDB = [
         material: 'Madera' 
     },
 
-    // --- NOVEDADES (Duplicados para la sección de novedades) ---
     { 
         id: 32, 
         categoria: 'novedades', 
@@ -486,8 +481,6 @@ const productosDB = [
     }
 ];
 
-
-// 2. Configuración y Selectores
 const numeroWhatsApp = "521234567890";
 const seccionDisplay = document.getElementById('display-productos');
 const contenedor = document.getElementById('contenedor-productos');
@@ -495,28 +488,21 @@ const tituloSeccion = document.getElementById('titulo-seccion');
 
 
 function mostrarProductos(categoria) {
-    // 1. Mostrar la sección y limpiar
     seccionDisplay.classList.remove('d-none');
     contenedor.innerHTML = '';
 
-    // 2. Filtrar
     const filtrados = productosDB.filter(p => p.categoria === categoria);
     tituloSeccion.textContent = 'Explorando: ' + categoria.toUpperCase();
-
-    // 3. Validar si hay productos
     if (filtrados.length === 0) {
         contenedor.innerHTML = '<p class="text-center text-muted w-100">No hay productos disponibles en esta categoría.</p>';
         return;
     }
 
-    // 4. Generar HTML
     const htmlContent = filtrados.map(p => {
-        // --- AQUÍ FALTABA ESTO: Definir medidas y material ---
         const medidas = p.medidas || 'Consultar';
         const material = p.material || 'Tela'; 
 
         const mensaje = `Hola, estoy interesado en el modelo ${p.nombre} que vi en la web por ${p.precio}.`;
-        // Asegúrate de que numeroWhatsApp esté definido globalmente
         const linkWhatsApp = `https://wa.me/${typeof numeroWhatsApp !== 'undefined' ? numeroWhatsApp : ''}?text=${encodeURIComponent(mensaje)}`;
 
         return `
@@ -605,7 +591,7 @@ function cerrarVista() {
         responsive: {
             0: { items: 1 },    // 1 card en móvil
             768: { items: 2 },  // 2 cards en tablet
-            1024: { items: 3 }  // 3 cards en PC (igual que tu diseño actual)
+            1024: { items: 3 }  // 3 cards en PC
         }
     });
 });
