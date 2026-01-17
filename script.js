@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. Base de Datos de Productos
 const productosDB = [
+    //Sofas
     { 
         id: 1, 
         categoria: 'sofas', 
@@ -261,6 +262,56 @@ const productosDB = [
     },
 
     { 
+        id: 44, 
+        categoria: 'sofas', 
+        nombre: 'Sofá Zafra', 
+        precio: '$500', 
+        img: 'img/sofa-safir-black.png', 
+        medidas: '210 x 90 cm', 
+        material: 'Tela' 
+    },
+
+    { 
+        id: 45, 
+        categoria: 'sofas', 
+        nombre: 'Sofá Estela', 
+        precio: '$550', 
+        img: 'img/estela.png', 
+        medidas: '220 x 80 cm', 
+        material: 'Tela' 
+    },
+
+    { 
+        id: 46, 
+        categoria: 'sofas', 
+        nombre: 'Sofá Legado - 3 Puestos', 
+        precio: '$400', 
+        img: 'img/legado-3-puestos.png', 
+        medidas: '180 x 75 cm', 
+        material: 'Tela' 
+    },
+
+    { 
+        id: 47, 
+        categoria: 'sofas', 
+        nombre: 'Sofá Legado - 2 Puestos', 
+        precio: '$300', 
+        img: 'img/legado-2-puestos.png', 
+        medidas: '150 x 85 cm', 
+        material: 'Tela' 
+    },
+
+    { 
+        id: 48, 
+        categoria: 'sofas', 
+        nombre: 'Sofá Bubble - 3 Puestos', 
+        precio: '$300', 
+        img: 'poltrona-carlos.png', 
+        medidas: 'Consultar', 
+        material: 'Tela' 
+    },
+ //Sillas 
+    { 
         id: 3, 
         categoria: 'sillas', 
         nombre: 'Poltrona Velvet', 
@@ -314,7 +365,7 @@ const productosDB = [
         medidas: '95 x 70 cm', 
         material: 'Tela' 
     },
-
+ //Camas
     { 
         id: 4, 
         categoria: 'camas', 
@@ -346,12 +397,12 @@ const productosDB = [
         id: 30, 
         categoria: 'camas', 
         nombre: 'Cama Night - King', 
-        precio: '$800', 
+        precio: '$490', 
         img: 'cama-night.png', 
         medidas: '200 x 200 cm', 
         material: 'Tela/Madera' 
     },
-
+ //mesas
     { 
         id: 15, 
         categoria: 'mesas', 
@@ -449,7 +500,7 @@ const productosDB = [
         nombre: 'Sofa Bubble', 
         precio: '$220', 
         img: 'poltrona-carlos.png', 
-        medidas: '195 x 170 cm', 
+        medidas: 'Consultar', 
         material: 'Tela' 
     },
     { 
