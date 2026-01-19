@@ -428,6 +428,7 @@
                     backdrop-filter: blur(5px);
                     border-radius: 50px;
                     padding: 5px 15px;
+                    z-index: 10;
                 }
 
                 @media (min-width: 768px) {
@@ -448,20 +449,14 @@
                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2;">
             </div>
 
-            <div class="badge-venezuela position-absolute top-0 end-0 m-4 d-none d-md-flex align-items-center shadow-lg mb-1"
-                style="z-index: 3;">
+            <div class="badge-venezuela position-absolute top-0 start-0 ms-3 d-flex align-items-center shadow-lg badge-mobile"
+                style="margin-top: 70px;">
                 <i class="fas fa-certificate text-primary me-2"></i>
-                <span class="text-white">Hecho en <strong>Venezuela</strong></span>
+                <span class="text-white small">Hecho en <strong>Venezuela</strong></span>
                 <div class="flag-mini ms-2"></div>
             </div>
 
-            <div class="container position-relative text-white px-3 px-md-0" style="z-index: 3;">
-
-                <div class="d-inline-flex d-md-none align-items-center shadow-lg mb-2 mt-3 badge-mobile">
-                    <i class="fas fa-certificate text-primary me-2"></i>
-                    <span class="text-white small">Hecho en <strong>Venezuela</strong></span>
-                    <div class="flag-mini ms-2"></div>
-                </div>
+            <div class="container position-relative text-white px-3 px-md-0" style="z-index: 3; padding-top: 140px;">
 
                 <h1 class="hero-title fw-bold mb-2 mb-md-3">Exclusividad en cada Rincón de Venezuela</h1>
 
@@ -472,12 +467,12 @@
                     <div class="col-6 col-md-3">
                         <i class="fas fa-couch fa-2x mb-2 mb-md-3 text-primary"></i>
                         <h6 class="fw-bold">Diseño Ergonómico</h6>
-                        <p class="small text-white-50">Confort superior en sofás.</p>
+                        <p class="small text-white-50">Confort superior.</p>
                     </div>
                     <div class="col-6 col-md-3">
                         <i class="fas fa-hammer fa-2x mb-2 mb-md-3 text-primary"></i>
                         <h6 class="fw-bold">Artesanía Local</h6>
-                        <p class="small text-white-50">Calidad hecha a mano.</p>
+                        <p class="small text-white-50">Hecho a mano.</p>
                     </div>
                     <div class="col-6 col-md-3">
                         <i class="fas fa-shield-alt fa-2x mb-2 mb-md-3 text-primary"></i>
@@ -497,34 +492,41 @@
             </div>
         </section>
 
-        <section id="nosotros" class="py-5">
+        <section id="nosotros" class="py-5 bg-light">
             <div class="container">
-                <h2 class="text-center mb-4 fw-bold"> Nuestra Promesa</h2>
-                <div class="row text-center">
+                <h2 class="text-center mb-5 fw-bold">Nuestra Promesa</h2>
+                <div class="row text-center g-4">
 
                     <div class="col-md-4">
-                        <div class="p-3">
-                            <i class="fa-solid fa-couch display-4 text-primary" style="color:#25D366"></i>
-                            <h4 class="mt-3">Calidad Certificada</h4>
-                            <p>Materiales duraderos y diseños ergonómicos para tu máximo confort.</p>
+                        <div class="card h-100 border-0 shadow-sm p-4 bg-white">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-couch display-4 text-primary"></i>
+                            </div>
+                            <h4 class="fw-bold">Calidad Certificada</h4>
+                            <p class="text-muted">Materiales duraderos y diseños ergonómicos para tu máximo confort.</p>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="p-3">
-                            <i class="fa-solid fa-drafting-compass display-4 text-primary"></i>
-                            <h4 class="mt-3">Diseño sin Límites</h4>
-                            <p>Piezas modernas que se adaptan a cualquier estilo de vida.</p>
+                        <div class="card h-100 border-0 shadow-sm p-4 bg-white">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-drafting-compass display-4 text-primary"></i>
+                            </div>
+                            <h4 class="fw-bold">Diseño sin Límites</h4>
+                            <p class="text-muted">Piezas modernas que se adaptan a cualquier estilo de vida.</p>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="p-3">
-                            <i class="fa-solid fa-cube display-4 text-primary"></i>
-                            <h4 class="mt-3">Innovación Visual</h4>
-                            <p>Diseños únicos en muebles, mesas y camas que redefinen tu espacio.</p>
+                        <div class="card h-100 border-0 shadow-sm p-4 bg-white">
+                            <div class="mb-3">
+                                <i class="fa-solid fa-cube display-4 text-primary"></i>
+                            </div>
+                            <h4 class="fw-bold">Innovación Visual</h4>
+                            <p class="text-muted">Diseños únicos en muebles, mesas y camas que redefinen tu espacio.</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
