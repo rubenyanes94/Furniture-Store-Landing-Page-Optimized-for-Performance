@@ -390,58 +390,76 @@
             </div>
         </div>
     </section>
-    <section id="hero-video" class="position-relative overflow-hidden text-center vh-100 d-flex align-items-center"
-        style="background-color: #000;">
+   <section id="hero-video" class="position-relative overflow-hidden text-center min-vh-75 d-flex align-items-center py-3"
+    style="background-color: #000;">
 
-        <video autoplay muted loop playsinline
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;"loading="lazy">
-            <source src="PixVerse_V5_Transition_360P.mp4" type="video/mp4">
-            Tu navegador no soporta video.
-        </video>
+    <style>
+        /* Ajustamos un poco el tamaño en móvil para que sea más compacto también */
+        .hero-title { font-size: 2.2rem; } 
+        @media (min-width: 768px) { .hero-title { font-size: 4.5rem; } }
+        
+        .badge-mobile { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(5px); border-radius: 50px; padding: 5px 15px; }
+        
+        /* Aseguramos que en PC la sección recupere su altura completa (opcional, si te gusta full screen en PC) */
+        @media (min-width: 768px) { #hero-video { min-height: 100vh !important; } }
+    </style>
 
-        <div
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2;">
-        </div>
+    <video autoplay muted loop playsinline
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1;" loading="lazy">
+        <source src="PixVerse_V5_Transition_360P.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+    </video>
 
-        <div class="badge-venezuela position-absolute top-0 end-0 m-4 d-flex align-items-center shadow-lg mb-1"
-            style="z-index: 3;">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 2;">
+    </div>
+
+    <div class="badge-venezuela position-absolute top-0 end-0 m-4 d-none d-md-flex align-items-center shadow-lg mb-1"
+        style="z-index: 3;">
+        <i class="fas fa-certificate text-primary me-2"></i>
+        <span class="text-white">Hecho en <strong>Venezuela</strong></span>
+        <div class="flag-mini ms-2"></div>
+    </div>
+
+    <div class="container position-relative text-white px-3 px-md-0" style="z-index: 3;">
+        
+        <div class="d-inline-flex d-md-none align-items-center shadow-lg mb-2 mt-3 badge-mobile">
             <i class="fas fa-certificate text-primary me-2"></i>
-            <span class="text-white">Hecho en <strong>Venezuela</strong></span>
+            <span class="text-white small">Hecho en <strong>Venezuela</strong></span>
             <div class="flag-mini ms-2"></div>
         </div>
 
-        <div class="container position-relative text-white" style="z-index: 3;">
-            <h1 class="display-3 fw-bold mb-2">Exclusividad en cada Rincón de Venezuela</h1>
-            <p class="lead fs-4 mb-5 text-white-50">Muebles de alta gama diseñados y fabricados en Caracas.</p>
+        <h1 class="hero-title fw-bold mb-2 mb-md-3">Exclusividad en cada Rincón de Venezuela</h1>
+        
+        <p class="lead fs-4 mb-3 mb-md-5 text-white-50">Muebles de alta gama diseñados y fabricados en Caracas.</p>
 
-            <div class="row g-4 mb-5 justify-content-center">
-                <div class="col-6 col-md-3">
-                    <i class="fas fa-couch fa-2x mb-3 text-primary"></i>
-                    <h6 class="fw-bold">Diseño Ergonómico</h6>
-                    <p class="small text-white-50">Confort superior en sofás.</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <i class="fas fa-hammer fa-2x mb-3 text-primary"></i>
-                    <h6 class="fw-bold">Artesanía Local</h6>
-                    <p class="small text-white-50">Calidad hecha a mano.</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <i class="fas fa-shield-alt fa-2x mb-3 text-primary"></i>
-                    <h6 class="fw-bold">Garantía Real</h6>
-                    <p class="small text-white-50">Materiales premium.</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <i class="fas fa-truck fa-2x mb-3 text-primary"></i>
-                    <h6 class="fw-bold">Entrega Segura</h6>
-                    <p class="small text-white-50">Directo en Caracas.</p>
-                </div>
+        <div class="row g-3 g-md-4 mb-3 mb-md-5 justify-content-center">
+            <div class="col-6 col-md-3">
+                <i class="fas fa-couch fa-2x mb-2 mb-md-3 text-primary"></i>
+                <h6 class="fw-bold">Diseño Ergonómico</h6>
+                <p class="small text-white-50">Confort superior en sofás.</p>
             </div>
-
-            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                <a href="#productos" class="btn btn-hero btn-primary btn-lg px-5 shadow">Explorar Catálogo</a>
+            <div class="col-6 col-md-3">
+                <i class="fas fa-hammer fa-2x mb-2 mb-md-3 text-primary"></i>
+                <h6 class="fw-bold">Artesanía Local</h6>
+                <p class="small text-white-50">Calidad hecha a mano.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <i class="fas fa-shield-alt fa-2x mb-2 mb-md-3 text-primary"></i>
+                <h6 class="fw-bold">Garantía Real</h6>
+                <p class="small text-white-50">Materiales premium.</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <i class="fas fa-truck fa-2x mb-2 mb-md-3 text-primary"></i>
+                <h6 class="fw-bold">Entrega Segura</h6>
+                <p class="small text-white-50">Directo en Caracas.</p>
             </div>
         </div>
-    </section>
+
+        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-3 pb-2">
+            <a href="#productos" class="btn btn-hero btn-primary btn-lg px-5 shadow">Explorar Catálogo</a>
+        </div>
+    </div>
+</section>
 
     <section id="nosotros" class="py-5">
         <div class="container">
@@ -591,13 +609,13 @@
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 fw-bold text-primary">Productos</h6>
                     <p>
-                        <a href="#productos" class="text-white" style="text-decoration: none;">Sofás y Salas</a>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Sofás</a>
+                    </p>
+                     <p>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Poltronas</a>
                     </p>
                     <p>
-                        <a href="#productos" class="text-white" style="text-decoration: none;">Mesas de Centro</a>
-                    </p>
-                    <p>
-                        <a href="#productos" class="text-white" style="text-decoration: none;">Muebles de Oficina</a>
+                        <a href="#productos" class="text-white" style="text-decoration: none;">Mesas</a>
                     </p>
                     <p>
                         <a href="#productos" class="text-white" style="text-decoration: none;">Dormitorios</a>
@@ -608,9 +626,6 @@
                     <h6 class="text-uppercase mb-4 fw-bold text-primary">Ayuda y Enlaces</h6>
                     <p>
                         <a href="#" class="text-white" style="text-decoration: none;">Tarifas de Envío</a>
-                    </p>
-                    <p>
-                        <a href="#" class="text-white" style="text-decoration: none;">Centro de Ayuda</a>
                     </p>
                 </div>
 
