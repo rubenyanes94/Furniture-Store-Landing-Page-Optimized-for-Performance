@@ -68,7 +68,31 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
     });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        const menuToggle = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false});
+
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => {
+                if (menuToggle.classList.contains('show')) {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    });
+
 });
+
+ window.addEventListener('scroll', function() {
+        const nav = document.getElementById('main-nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled-nav');
+        } else {
+            nav.classList.remove('scrolled-nav');
+        }
+    });
 
 document.addEventListener('DOMContentLoaded', () => {
     const swatches = document.querySelectorAll('.color-swatch');
@@ -613,7 +637,6 @@ function mostrarProductos(categoria) {
             </div>`;
     }).join(''); 
 
-    // 5. Inyectar y Scroll
     contenedor.innerHTML = htmlContent;
     seccionDisplay.scrollIntoView({ behavior: 'smooth' });
 }

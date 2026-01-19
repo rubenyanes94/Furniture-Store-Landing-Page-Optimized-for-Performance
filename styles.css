@@ -484,3 +484,154 @@ body {
     }
 }
 
+/* --- 1. NAVBAR GENERAL (EFECTO VIDRIO) --- */
+.navbar-glass {
+    background: rgba(255, 255, 255, 0.95); /* Blanco casi sólido */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: #2c3e50; /* Color oscuro para el logo */
+}
+
+/* --- 2. BOTÓN DE CONTACTO (NUEVO COLOR GRIS) --- */
+.btn-contact-gray {
+    background-color: #6c757d; /* Gris profesional */
+    color: #ffffff !important; /* Texto blanco forzado */
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-contact-gray:hover {
+    background-color: #495057; /* Gris más oscuro al pasar el mouse */
+    color: #ffffff !important;
+    transform: translateY(-2px); /* Pequeña elevación */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2) !important;
+}
+
+/* --- 3. ESTILO PARA MÓVILES (MENÚ TARJETA) --- */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        margin-top: 15px;
+        border: 1px solid rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+    /* Enlaces del menú móvil */
+    .nav-link.mobile-link {
+        padding: 12px 0;
+        border-bottom: 1px solid #f0f0f0;
+        color: #555;
+        transition: color 0.3s, background 0.3s;
+    }
+    
+    .nav-link.mobile-link:hover, 
+    .nav-link.mobile-link:active {
+        color: #0d6efd;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    /* Ajuste de ancho para el botón en móvil */
+    .nav-item:last-child {
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .nav-item:last-child .btn {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* --- 4. ANIMACIÓN HAMBURGUESA --- */
+.custom-toggler:focus { box-shadow: none; }
+
+.hamburger-lines {
+    width: 28px;
+    height: 22px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-lines .line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+}
+
+.hamburger-lines .line1 { transition: transform 0.4s ease-in-out; }
+.hamburger-lines .line2 { transition: transform 0.2s ease-in-out; }
+.hamburger-lines .line3 { transition: transform 0.4s ease-in-out; }
+
+button[aria-expanded="true"] .line1 { transform: rotate(45deg) translate(6px, 6px); }
+button[aria-expanded="true"] .line2 { transform: scaleY(0); }
+button[aria-expanded="true"] .line3 { transform: rotate(-45deg) translate(6px, -6px); }
+/* --- ESTADOS AL HACER SCROLL (.scrolled-nav) --- */
+
+/* 1. Fondo Negro de la Barra Principal */
+.navbar-glass.scrolled-nav {
+    background: rgba(0, 0, 0, 0.95); /* Negro sólido */
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+}
+
+/* 2. Icono Hamburguesa a BLANCO (Para que se vea sobre el negro) */
+.scrolled-nav .hamburger-lines .line {
+    background: #ffffff !important;
+}
+
+/* 3. Logo a BLANCO */
+.scrolled-nav .navbar-brand {
+    color: #ffffff !important;
+}
+
+/* --- AQUÍ ESTÁ LA SOLUCIÓN DEL PROBLEMA --- */
+
+/* A) EN PANTALLAS GRANDES (PC): Texto Blanco */
+@media (min-width: 992px) {
+    .scrolled-nav .nav-link {
+        color: #ffffff !important;
+    }
+    .scrolled-nav .nav-link:hover {
+        color: #cccccc !important;
+    }
+}
+
+/* B) EN PANTALLAS PEQUEÑAS (MÓVIL): Texto Oscuro */
+@media (max-width: 991px) {
+    /* Mantenemos el fondo de la tarjeta blanco */
+    .scrolled-nav .navbar-collapse {
+        background: #ffffff !important;
+    }
+
+    /* ¡IMPORTANTE! Forzamos el texto a GRIS OSCURO dentro del menú móvil */
+    .scrolled-nav .nav-link.mobile-link {
+        color: #555555 !important; /* Gris oscuro para que se lea */
+    }
+
+    /* Color azul al tocar */
+    .scrolled-nav .nav-link.mobile-link:hover,
+    .scrolled-nav .nav-link.mobile-link:active {
+        color: #0d6efd !important;
+        background-color: #f8f9fa !important;
+    }
+    
+    /* El logo en móvil sigue siendo blanco porque está en la barra negra */
+    .scrolled-nav .navbar-brand {
+        color: #ffffff !important;
+    }
+}
+
