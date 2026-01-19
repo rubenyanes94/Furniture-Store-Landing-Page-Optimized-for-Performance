@@ -614,3 +614,7 @@ button[aria-expanded="true"] .line3 { transform: rotate(-45deg) translate(6px, -
         color: #ffffff !important;
     }
 }
+
+.container-fluid {
+    --bs-gutter-x: 0;
+}
