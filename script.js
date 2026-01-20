@@ -590,7 +590,7 @@ function mostrarProductos(categoria) {
                                 src="${p.img}" 
                                 loading="lazy" 
                                 class="img-fluid w-100" 
-                                style="height: 220px; object-fit: cover; object-position: center;" 
+                                style="height: 220px; object-fit: cover; object-position: center;clip-path: inset(0 0 7% 0);" 
                                 alt="${p.nombre}"
                             >
                         </div>
