@@ -556,7 +556,7 @@ const productosDB = [
     }
 ];
 
-const numeroWhatsApp = "521234567890";
+const numeroWhatsApp = "584220218520";
 const seccionDisplay = document.getElementById('display-productos');
 const contenedor = document.getElementById('contenedor-productos');
 const tituloSeccion = document.getElementById('titulo-seccion');
