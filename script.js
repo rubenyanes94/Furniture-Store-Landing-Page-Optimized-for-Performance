@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     function sendWhatsAppMessage() {
-        const phoneNumber = "584140000000";
+        const phoneNumber = "584220218520";
 
         const nombre = document.getElementById('contact-nombre').value;
         const email = document.getElementById('contact-email').value;
