@@ -189,7 +189,7 @@ const productosDB = [
         id: 14, 
         categoria: 'sofas', 
         nombre: 'Sofá Modular Comfy', 
-        precio: '$440', 
+        precio: '$360', 
         img: 'modular-estambul-grey.png', 
         medidas: '240 x 150 cm', 
         material: 'Tela' 
@@ -243,7 +243,7 @@ const productosDB = [
         id: 31, 
         categoria: 'sofas', 
         nombre: 'Sofa Bubble', 
-        precio: '$220', 
+        precio: '$450', 
         img: 'poltrona-carlos.png', 
         medidas: '195 x 170 cm', 
         material: 'Tela' 
@@ -329,7 +329,7 @@ const productosDB = [
         id: 48, 
         categoria: 'sofas', 
         nombre: 'Sofá Bubble - 3 Puestos', 
-        precio: '$300', 
+        precio: '$550', 
         img: 'poltrona-carlos.png', 
         medidas: 'Consultar', 
         material: 'Tela' 
@@ -477,7 +477,7 @@ const productosDB = [
         categoria: 'mesas', 
         nombre: 'Nudo', 
         precio: '$120', 
-        img: 'mesa-nudo.png', 
+        img: 'nudo.jpeg', 
         medidas: 'Consultar', 
         material: 'Madera' 
     },
